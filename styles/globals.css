@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* For cart to not flow in x-direction */
+body {
+    overflow-x: hidden;
+}

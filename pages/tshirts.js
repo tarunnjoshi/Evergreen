@@ -9,7 +9,7 @@ import Link from 'next/link'
     <div className="container px-5 py-24 mx-auto">
       <div className="flex flex-wrap -m-4">
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg lg:mr-0.75">
-          <a  href={'/product/wear-the-code'} className="block relative rounded overflow-hidden">
+          <a  href={'/product/wear-the-code'} className="block rounded overflow-hidden">
             <img alt="ecommerce" className="object-cover object-top w-full h-full block" src="https://m.media-amazon.com/images/I/71qStemLMxL._UX679_.jpg"/>
           <div className="mt-4">
             <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">T-Shirts</h3> 
@@ -20,7 +20,7 @@ import Link from 'next/link'
           </a>
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg lg:mr-0.75">
-          <a  href={'/product/wear-the-code'} className="block relative rounded overflow-hidden">
+          <a  href={'/product/wear-the-code'} className="block rounded overflow-hidden">
             <img alt="ecommerce" className="object-cover object-top w-full h-full block" src="https://m.media-amazon.com/images/I/71qStemLMxL._UX679_.jpg"/>
           <div className="mt-4">
             <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">T-Shirts</h3>
@@ -31,7 +31,7 @@ import Link from 'next/link'
           </a>
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg lg:mr-0.75">
-          <a  href={'/product/wear-the-code'} className="block relative rounded overflow-hidden">
+          <a  href={'/product/wear-the-code'} className="block rounded overflow-hidden">
             <img alt="ecommerce" className="object-cover object-top w-full h-full block" src="https://m.media-amazon.com/images/I/71qStemLMxL._UX679_.jpg"/>
           <div className="mt-4">
             <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">T-Shirts</h3>
@@ -42,7 +42,7 @@ import Link from 'next/link'
           </a>
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg lg:mr-0.75">
-          <a  href={'/product/wear-the-code'} className="block relative rounded overflow-hidden">
+          <a  href={'/product/wear-the-code'} className="block rounded overflow-hidden">
             <img alt="ecommerce" className="object-cover object-top w-full h-full block" src="https://m.media-amazon.com/images/I/71qStemLMxL._UX679_.jpg"/>
           <div className="mt-4">
             <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">T-Shirts</h3>
@@ -53,7 +53,7 @@ import Link from 'next/link'
           </a>
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg lg:mr-0.75">
-          <a  href={'/product/wear-the-code'} className="block relative rounded overflow-hidden">
+          <a  href={'/product/wear-the-code'} className="block rounded overflow-hidden">
             <img alt="ecommerce" className="object-cover object-top w-full h-full block" src="https://m.media-amazon.com/images/I/71qStemLMxL._UX679_.jpg"/>
           <div className="mt-4">
             <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">T-Shirts</h3>
@@ -64,7 +64,7 @@ import Link from 'next/link'
           </a>
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg lg:mr-0.75">
-          <a  href={'/product/wear-the-code'} className="block relative rounded overflow-hidden">
+          <a  href={'/product/wear-the-code'} className="block rounded overflow-hidden">
             <img alt="ecommerce" className="object-cover object-top w-full h-full block" src="https://m.media-amazon.com/images/I/71qStemLMxL._UX679_.jpg"/>
           <div className="mt-4">
             <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">T-Shirts</h3>
@@ -75,7 +75,7 @@ import Link from 'next/link'
           </a>
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg lg:mr-0.75">
-          <a  href={'/product/wear-the-code'} className="block relative rounded overflow-hidden">
+          <a  href={'/product/wear-the-code'} className="block rounded overflow-hidden">
             <img alt="ecommerce" className="object-cover object-top w-full h-full block" src="https://m.media-amazon.com/images/I/71qStemLMxL._UX679_.jpg"/>
           <div className="mt-4">
             <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">T-Shirts</h3>
@@ -86,7 +86,7 @@ import Link from 'next/link'
           </a>
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg lg:mr-0.75">
-          <a  href={'/product/wear-the-code'} className="block relative rounded overflow-hidden">
+          <a  href={'/product/wear-the-code'} className="block rounded overflow-hidden">
             <img alt="ecommerce" className="object-cover object-top w-full h-full block" src="https://m.media-amazon.com/images/I/71qStemLMxL._UX679_.jpg"/>
           <div className="mt-4">
             <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">T-Shirts</h3>
@@ -97,7 +97,7 @@ import Link from 'next/link'
           </a>
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg lg:mr-0.75">
-          <a  href={'/product/wear-the-code'} className="block relative rounded overflow-hidden">
+          <a  href={'/product/wear-the-code'} className="block rounded overflow-hidden">
             <img alt="ecommerce" className="object-cover object-top w-full h-full block" src="https://m.media-amazon.com/images/I/71qStemLMxL._UX679_.jpg"/>
           <div className="mt-4">
             <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">T-Shirts</h3>
@@ -108,7 +108,7 @@ import Link from 'next/link'
           </a>
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg lg:mr-0.75">
-          <a  href={'/product/wear-the-code'} className="block relative rounded overflow-hidden">
+          <a  href={'/product/wear-the-code'} className="block rounded overflow-hidden">
             <img alt="ecommerce" className="object-cover object-top w-full h-full block" src="https://m.media-amazon.com/images/I/71qStemLMxL._UX679_.jpg"/>
           <div className="mt-4">
             <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">T-Shirts</h3>
@@ -119,7 +119,7 @@ import Link from 'next/link'
           </a>
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg lg:mr-0.75">
-          <a  href={'/product/wear-the-code'} className="block relative rounded overflow-hidden">
+          <a  href={'/product/wear-the-code'} className="block rounded overflow-hidden">
             <img alt="ecommerce" className="object-cover object-top w-full h-full block" src="https://m.media-amazon.com/images/I/71qStemLMxL._UX679_.jpg"/>
           <div className="mt-4">
             <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">T-Shirts</h3>
@@ -130,7 +130,7 @@ import Link from 'next/link'
           </a>
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg lg:mr-0.75">
-          <a  href={'/product/wear-the-code'} className="block relative rounded overflow-hidden">
+          <a  href={'/product/wear-the-code'} className="block rounded overflow-hidden">
             <img alt="ecommerce" className="object-cover object-top w-full h-full block" src="https://m.media-amazon.com/images/I/71qStemLMxL._UX679_.jpg"/>
           <div className="mt-4">
             <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">T-Shirts</h3>
@@ -141,7 +141,7 @@ import Link from 'next/link'
           </a>
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg lg:mr-0.75">
-          <a  href={'/product/wear-the-code'} className="block relative rounded overflow-hidden">
+          <a  href={'/product/wear-the-code'} className="block rounded overflow-hidden">
             <img alt="ecommerce" className="object-cover object-top w-full h-full block" src="https://m.media-amazon.com/images/I/71qStemLMxL._UX679_.jpg"/>
           <div className="mt-4">
             <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">T-Shirts</h3>
@@ -152,7 +152,7 @@ import Link from 'next/link'
           </a>
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg lg:mr-0.75">
-          <a  href={'/product/wear-the-code'} className="block relative rounded overflow-hidden">
+          <a  href={'/product/wear-the-code'} className="block rounded overflow-hidden">
             <img alt="ecommerce" className="object-cover object-top w-full h-full block" src="https://m.media-amazon.com/images/I/71qStemLMxL._UX679_.jpg"/>
           <div className="mt-4">
             <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">T-Shirts</h3>
@@ -163,7 +163,7 @@ import Link from 'next/link'
           </a>
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg lg:mr-0.75">
-          <a  href={'/product/wear-the-code'} className="block relative rounded overflow-hidden">
+          <a  href={'/product/wear-the-code'} className="block rounded overflow-hidden">
             <img alt="ecommerce" className="object-cover object-top w-full h-full block" src="https://m.media-amazon.com/images/I/71qStemLMxL._UX679_.jpg"/>
           <div className="mt-4">
             <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">T-Shirts</h3>
@@ -174,7 +174,7 @@ import Link from 'next/link'
           </a>
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg lg:mr-0.75">
-          <a  href={'/product/wear-the-code'} className="block relative rounded overflow-hidden">
+          <a  href={'/product/wear-the-code'} className="block rounded overflow-hidden">
             <img alt="ecommerce" className="object-cover object-top w-full h-full block" src="https://m.media-amazon.com/images/I/71qStemLMxL._UX679_.jpg"/>
           <div className="mt-4">
             <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">T-Shirts</h3>
@@ -185,7 +185,7 @@ import Link from 'next/link'
           </a>
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg lg:mr-0.75">
-          <a  href={'/product/wear-the-code'} className="block relative rounded overflow-hidden">
+          <a  href={'/product/wear-the-code'} className="block rounded overflow-hidden">
             <img alt="ecommerce" className="object-cover object-top w-full h-full block" src="https://m.media-amazon.com/images/I/71qStemLMxL._UX679_.jpg"/>
           <div className="mt-4">
             <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">T-Shirts</h3>
@@ -196,7 +196,7 @@ import Link from 'next/link'
           </a>
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg lg:mr-0.75">
-          <a  href={'/product/wear-the-code'} className="block relative rounded overflow-hidden">
+          <a  href={'/product/wear-the-code'} className="block rounded overflow-hidden">
             <img alt="ecommerce" className="object-cover object-top w-full h-full block" src="https://m.media-amazon.com/images/I/71qStemLMxL._UX679_.jpg"/>
           <div className="mt-4">
             <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">T-Shirts</h3>
