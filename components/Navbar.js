@@ -48,8 +48,39 @@ const Navbar = () => {
             <div className='flex font-semibold items-center justify-center w-1/3 divlue-800 text-2-xl'><AiOutlinePlusCircle className='mr-2 text-2xl'/>1<AiOutlineMinusCircle className='ml-2 text-2xl'/></div>
             </div>
           </li>
+          <li>
+            <div className="item flex ">
+            <div className='w-2/3 font-semibold'>Tshirt - wear the code</div>
+            <div className='flex font-semibold items-center justify-center w-1/3 divlue-800 text-2-xl'><AiOutlinePlusCircle className='mr-2 text-2xl'/>1<AiOutlineMinusCircle className='ml-2 text-2xl'/></div>
+            </div>
+          </li>
+          <li>
+            <div className="item flex ">
+            <div className='w-2/3 font-semibold'>Tshirt - wear the code</div>
+            <div className='flex font-semibold items-center justify-center w-1/3 divlue-800 text-2-xl'><AiOutlinePlusCircle className='mr-2 text-2xl'/>1<AiOutlineMinusCircle className='ml-2 text-2xl'/></div>
+            </div>
+          </li>
+          <li>
+            <div className="item flex ">
+            <div className='w-2/3 font-semibold'>Tshirt - wear the code</div>
+            <div className='flex font-semibold items-center justify-center w-1/3 divlue-800 text-2-xl'><AiOutlinePlusCircle className='mr-2 text-2xl'/>1<AiOutlineMinusCircle className='ml-2 text-2xl'/></div>
+            </div>
+          </li>
+          <li>
+            <div className="item flex ">
+            <div className='w-2/3 font-semibold'>Tshirt - wear the code</div>
+            <div className='flex font-semibold items-center justify-center w-1/3 divlue-800 text-2-xl'><AiOutlinePlusCircle className='mr-2 text-2xl'/>1<AiOutlineMinusCircle className='ml-2 text-2xl'/></div>
+            </div>
+          </li>
+          <li>
+            <div className="item flex ">
+            <div className='w-2/3 font-semibold'>Tshirt - wear the code</div>
+            <div className='flex font-semibold items-center justify-center w-1/3 divlue-800 text-2-xl'><AiOutlinePlusCircle className='mr-2 text-2xl'/>1<AiOutlineMinusCircle className='ml-2 text-2xl'/></div>
+            </div>
+          </li>
         </ol>
         <button className="flex mx-auto mt-16 text-white bg-pink-400 border-0 py-2 px-8 focus:outline-none hover:bg-pink-500 rounded text-lg"><MdOutlineShoppingCartCheckout className='mt-1'/>Checkout</button>
+        <button className="flex mt-2 mx-auto text-white bg-pink-400 border-0 py-2 px-8 focus:outline-none hover:bg-pink-500 rounded text-lg">Clear cart</button>
       </div>
     </div>
   )
