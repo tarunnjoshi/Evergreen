@@ -6,7 +6,7 @@ import { AiFillCloseCircle } from 'react-icons/ai';
 import { MdOutlineShoppingCartCheckout } from 'react-icons/md';
 
 
-const Navbar = () => {
+const Navbar = ({cart, addToCart, removeFromCart, clearCart, subTotal}) => {
   const togglecart = () =>{
     if (ref.current.classList.contains('translate-x-full')){
       ref.current.classList.remove('translate-x-full')
@@ -42,45 +42,21 @@ const Navbar = () => {
         <h2 className='font-bold text-xl text-center'>shopping cart</h2>
         <span onClick={togglecart} className='absolute top-5 right-3 cursor-pointer text-2xl text-pink-500'><AiFillCloseCircle/></span>
         <ol className='list-decimal font-semibold' >
-          <li>
+        {Object.keys(cart).length==0 && <div className='my-3 text-base font-bold'>Your cart is empty</div>}
+         { Object.keys(cart).map((k) => {return <li key={k}>
             <div className="item flex ">
-            <div className='w-2/3 font-semibold'>Tshirt - wear the code</div>
-            <div className='flex font-semibold items-center justify-center w-1/3 divlue-800 text-2-xl'><AiOutlinePlusCircle className='mr-2 text-2xl'/>1<AiOutlineMinusCircle className='ml-2 text-2xl'/></div>
+            <div className='w-2/3 font-semibold'>{cart[k].name}</div>
+            <div className='flex font-semibold items-center justify-center w-1/3 divlue-800 text-2-xl'>
+              <AiOutlineMinusCircle  onClick={()=>{removeFromCart(k, 1, cart[k].price,cart[k].name,cart[k].size,  cart[k].variant )}}className='mr-2 text-2xl'/>{cart[k].qty}
+              <AiOutlinePlusCircle onClick={()=>{addToCart(k, 1, cart[k].price,cart[k].name,cart[k].size,  cart[k].variant )}} className='ml-2 text-2xl'/>
+            </div>
             </div>
           </li>
-          <li>
-            <div className="item flex ">
-            <div className='w-2/3 font-semibold'>Tshirt - wear the code</div>
-            <div className='flex font-semibold items-center justify-center w-1/3 divlue-800 text-2-xl'><AiOutlinePlusCircle className='mr-2 text-2xl'/>1<AiOutlineMinusCircle className='ml-2 text-2xl'/></div>
-            </div>
-          </li>
-          <li>
-            <div className="item flex ">
-            <div className='w-2/3 font-semibold'>Tshirt - wear the code</div>
-            <div className='flex font-semibold items-center justify-center w-1/3 divlue-800 text-2-xl'><AiOutlinePlusCircle className='mr-2 text-2xl'/>1<AiOutlineMinusCircle className='ml-2 text-2xl'/></div>
-            </div>
-          </li>
-          <li>
-            <div className="item flex ">
-            <div className='w-2/3 font-semibold'>Tshirt - wear the code</div>
-            <div className='flex font-semibold items-center justify-center w-1/3 divlue-800 text-2-xl'><AiOutlinePlusCircle className='mr-2 text-2xl'/>1<AiOutlineMinusCircle className='ml-2 text-2xl'/></div>
-            </div>
-          </li>
-          <li>
-            <div className="item flex ">
-            <div className='w-2/3 font-semibold'>Tshirt - wear the code</div>
-            <div className='flex font-semibold items-center justify-center w-1/3 divlue-800 text-2-xl'><AiOutlinePlusCircle className='mr-2 text-2xl'/>1<AiOutlineMinusCircle className='ml-2 text-2xl'/></div>
-            </div>
-          </li>
-          <li>
-            <div className="item flex ">
-            <div className='w-2/3 font-semibold'>Tshirt - wear the code</div>
-            <div className='flex font-semibold items-center justify-center w-1/3 divlue-800 text-2-xl'><AiOutlinePlusCircle className='mr-2 text-2xl'/>1<AiOutlineMinusCircle className='ml-2 text-2xl'/></div>
-            </div>
-          </li>
+          })
+          }
         </ol>
         <button className="flex mx-auto mt-16 text-white bg-pink-400 border-0 py-2 px-8 focus:outline-none hover:bg-pink-500 rounded text-lg"><MdOutlineShoppingCartCheckout className='mt-1'/>Checkout</button>
-        <button className="flex mt-2 mx-auto text-white bg-pink-400 border-0 py-2 px-8 focus:outline-none hover:bg-pink-500 rounded text-lg">Clear cart</button>
+        <button onClick={clearCart} className="flex mt-2 mx-auto text-white bg-pink-400 border-0 py-2 px-8 focus:outline-none hover:bg-pink-500 rounded text-lg">Clear cart</button>
       </div>
     </div>
   )
