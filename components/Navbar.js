@@ -38,7 +38,7 @@ const Navbar = ({cart, addToCart, removeFromCart, clearCart, subTotal}) => {
       <div onClick={togglecart} className="cart absolute right-0 top-4 mx-5 cursor-pointer">
         <AiOutlineShoppingCart className='text-xl md:text-2xl '></AiOutlineShoppingCart>
       </div>
-      <div ref={ref} className="w-72 sidebar absolute top-0 right-0 bg-pink-100 p-10 transition-transform translate-x-full transform" >
+      <div ref={ref} className={`w-72 sidebar absolute top-0 right-0 bg-pink-100 p-10 transition-transform ${Object.keys(cart).length !==0 ? 'translate-x-0': 'translate-x-full'}`} >
         <h2 className='font-bold text-xl text-center'>shopping cart</h2>
         <span onClick={togglecart} className='absolute top-5 right-3 cursor-pointer text-2xl text-pink-500'><AiFillCloseCircle/></span>
         <ol className='list-decimal font-semibold' >
@@ -55,7 +55,8 @@ const Navbar = ({cart, addToCart, removeFromCart, clearCart, subTotal}) => {
           })
           }
         </ol>
-        <button className="flex mx-auto mt-16 text-white bg-pink-400 border-0 py-2 px-8 focus:outline-none hover:bg-pink-500 rounded text-lg"><MdOutlineShoppingCartCheckout className='mt-1'/>Checkout</button>
+        <div className="subtotal font-bold my-5">Subtotal: {subTotal}</div>
+        <Link href={'/checkout'}> <button className="flex mx-auto mt-16 text-white bg-pink-400 border-0 py-2 px-8 focus:outline-none hover:bg-pink-500 rounded text-lg"><MdOutlineShoppingCartCheckout className='mt-1'/>Checkout</button></Link>
         <button onClick={clearCart} className="flex mt-2 mx-auto text-white bg-pink-400 border-0 py-2 px-8 focus:outline-none hover:bg-pink-500 rounded text-lg">Clear cart</button>
       </div>
     </div>
