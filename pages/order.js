@@ -22,7 +22,7 @@ const Order = () => {
           <span className="ml-auto text-gray-900">499</span>
         </div>
         <div className="flex border-t border-gray-200 py-2">
-          <span className="text-gray-500">Wear the ode (XL/Black)</span>
+          <span className="text-gray-500">Wear the oder (XL/Black)</span>
           <span className="ml-auto text-gray-900">1</span>
           <span className="ml-auto text-gray-900">499</span>
         </div>
