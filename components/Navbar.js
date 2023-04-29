@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { AiOutlineShoppingCart, AiOutlinePlusCircle, AiOutlineMinusCircle } from 'react-icons/ai';
 import { AiFillCloseCircle } from 'react-icons/ai';
-import { MdOutlineShoppingCartCheckout } from 'react-icons/md';
+import { MdOutlineShoppingCartCheckout, MdAccountCircle } from 'react-icons/md';
 
 
 const Navbar = ({cart, addToCart, removeFromCart, clearCart, subTotal}) => {
@@ -35,8 +35,9 @@ const Navbar = ({cart, addToCart, removeFromCart, clearCart, subTotal}) => {
           <Link href={'/mugs'}> <li>Mugs</li> </Link>
         </ul>
       </div>
-      <div onClick={togglecart} className="cart absolute right-0 top-4 mx-5 cursor-pointer">
-        <AiOutlineShoppingCart className='text-xl md:text-2xl '></AiOutlineShoppingCart>
+      <div className="cart absolute right-0 top-4 mx-5 cursor-pointer flex ">
+      <Link href={'/login'}><MdAccountCircle className='text-xl md:text-2xl mx-3 '/> </Link> 
+        <AiOutlineShoppingCart onClick={togglecart} className='text-xl md:text-2xl '></AiOutlineShoppingCart>
       </div>
       <div ref={ref} className={`w-72 sidebar absolute top-0 right-0 bg-pink-100 p-10 transition-transform ${Object.keys(cart).length !==0 ? 'translate-x-0': 'translate-x-full'}`} >
         <h2 className='font-bold text-xl text-center'>shopping cart</h2>
