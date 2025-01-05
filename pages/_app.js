@@ -41,6 +41,7 @@ export default function App({ Component, pageProps }) {
     }
     setCart(newCart)
 
+    // Save cart on local storage so if anyone updates the page then cart won't be updated
     saveCart(newCart)
   }
 
