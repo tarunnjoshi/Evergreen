@@ -36,3 +36,14 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Connect with Mongoose
+Install using brew: https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/
+
+# Setup the database
+mongosh
+use testdb (Database name)
+show databases
+Create a Collection: 
+db.createCollection("sampleCollection")
+Now use the tableplus to connect with the mongodb
