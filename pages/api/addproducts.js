@@ -3,7 +3,7 @@ import connectDb from "@/middleware/mongoose";
 
 const handler = async (req, res) => {
     try {
-        if(req.method === 'POST') {
+        if (req.method === 'POST') {
             let p = new Product({
                 title: req.body.title,
                 slug: req.body.slug,
@@ -13,7 +13,7 @@ const handler = async (req, res) => {
                 size: req.body.size,
                 color: req.body.color,
                 price: req.body.price,
-                availableQty: req.body.availableQty 
+                availableQty: req.body.availableQty
             })
         }
         else {
@@ -31,4 +31,3 @@ const handler = async (req, res) => {
 };
 
 export default connectDb(handler);
- 
