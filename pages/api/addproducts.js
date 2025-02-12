@@ -21,8 +21,6 @@ const handler = async (req, res) => {
         }
         await p.save();
 
-
-
         const product = new Product({ title, slug, desc, img, category, size, color, price, availableQty });
         await product.save();
         return res.status(201).json(product);
