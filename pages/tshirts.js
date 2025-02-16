@@ -10,22 +10,29 @@ const Tshirts = ({ products }) => {
     <div>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-wrap -m-4">
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg lg:mr-0.75">
-              <a href={'/product/wear-the-code'} className="block rounded overflow-hidden">
-                <img alt="ecommerce" className="object-cover object-top w-full h-full block" src="https://m.media-amazon.com/images/I/71qStemLMxL._UX679_.jpg" />
-                <div className="mt-4">
-                  <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">T-Shirts</h3>
-                  <h2 className="text-gray-900 title-font text-lg font-medium">EverGreen E-commerce</h2>
-                  <p className="mt-1">₹550.00</p>
-                  <p className="mt-1">S, M, L, XL, XX</p>
-                </div>
-              </a>
-            </div>
+          <div className="flex flex-wrap -m-4 justify-center">
+            {products.map((item) => (
+              <Link passHref={true} key={item._id} href={`/product/${item.slug}`} legacyBehavior>
+                <a className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+                  <div className="cursor-pointer shadow-lg rounded-lg overflow-hidden">
+                    <div className="block relative rounded overflow-hidden">
+                      <img alt="ecommerce" className="m-auto md:mx-0 h-[30vh] md:h-[30vh] block" src={item.img} />
+                    </div>
+                    <div className="mt-4 text-center md:text-left">
+                      <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">T-Shirts</h3>
+                      <h2 className="text-gray-900 title-font text-lg font-medium">{item.title}</h2>
+                      <p className="mt-1">₹{item.price}</p>
+                      <p className="mt-1">S, M, L, XL, XX</p>
+                    </div>
+                  </div>
+                </a>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
-    </div>
+
+    </div >
   )
 }
 
@@ -37,7 +44,7 @@ export async function getServerSideProps(context) {
     });
   }
 
-  let products = await Product.find();
+  let products = await Product.find({ category: 'tshirt' });
 
   return {
     props: { products: JSON.parse(JSON.stringify(products)) },
