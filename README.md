@@ -41,6 +41,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 Install using brew: https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/
 
 # Setup the database
+To run MongoDB: `brew services start mongodb-community@8.0`
+To stop: `brew services stop mongodb-community@8.0`
 mongosh
 use testdb (Database name)
 show databases
