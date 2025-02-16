@@ -1,29 +1,29 @@
 import Product from "@/models/Product";
 import connectDb from "@/middleware/mongoose";
 
+//This is not public not anyone can access this API
 const handler = async (req, res) => {
     try {
         if (req.method === 'POST') {
-            let p = new Product({
-                title: req.body.title,
-                slug: req.body.slug,
-                desc: req.body.desc,
-                img: req.body.img,
-                category: req.body.category,
-                size: req.body.size,
-                color: req.body.color,
-                price: req.body.price,
-                availableQty: req.body.availableQty
-            })
+            for (let i = 0; i < req.body.length; i++) {
+                let p = new Product({
+                    title: req.body[i].title,
+                    slug: req.body[i].slug,
+                    desc: req.body[i].desc,
+                    img: req.body[i].img,
+                    category: req.body[i].category,
+                    size: req.body[i].size,
+                    color: req.body[i].color,
+                    price: req.body[i].price,
+                    availableQty: req.body[i].availableQty
+                })
+                await p.save();
+            }
+            return res.status(200).json({ message: 'Products added successfully' });
         }
         else {
             return res.status(400).json({ error: 'This method is not allowed' });
         }
-        await p.save();
-
-        const product = new Product({ title, slug, desc, img, category, size, color, price, availableQty });
-        await product.save();
-        return res.status(201).json(product);
     } catch (error) {
         console.error(error);
         res.status(500).json({ error: 'Failed to fetch products' });

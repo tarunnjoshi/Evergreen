@@ -1,19 +1,24 @@
 import mongoose from 'mongoose';
 
-const connectDb = handler => async (req, res) => {
+const connectDb = (handler) => async (req, res) => {
     if (mongoose.connections[0].readyState) {
-        // If already connected, proceed to handler
+        console.log("✅ Already connected to MongoDB");
         return handler(req, res);
     }
+
     try {
-        // Establish connection to the database
+        console.log("🔄 Connecting to MongoDB...", process.env.MONGODB_URI);
+        
         await mongoose.connect(process.env.MONGODB_URI, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });
-        return handler(req, res); // Proceed to the handler once the connection is established
+
+        console.log("✅ Successfully connected to MongoDB");
+        return handler(req, res);
     } catch (error) {
-        return res.status(500).json({ error: 'Database connection failed' });
+        console.error("❌ MongoDB Connection Error:", error);
+        return res.status(500).json({ error: 'Database connection failed', details: error.message });
     }
 };
 
