@@ -6,9 +6,10 @@ const handler = async (req, res) => {
     try {
         if (req.method === 'POST') {
             for (let i = 0; i < req.body.length; i++) {
+                let formattedSlug = req.body[i].title.toLowerCase().replace(/\s+/g, '-'); // Auto-generate slug
                 let p = new Product({
                     title: req.body[i].title,
-                    slug: req.body[i].slug,
+                    slug: formattedSlug, // Use formatted slug
                     desc: req.body[i].desc,
                     img: req.body[i].img,
                     category: req.body[i].category,
