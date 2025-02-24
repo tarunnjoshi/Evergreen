@@ -50,7 +50,7 @@ export default function App({ Component, pageProps }) {
     saveCart({})
   }
 
-  const removeFromCart = (itemcode, qty, price, name, size, variant) => { 
+  const removeFromCart = (itemcode, qty, price, name, size, variant) => {
     let newCart = cart;
     if (itemcode in cart) {
       newCart[itemcode].qty = cart[itemcode].qty - qty
