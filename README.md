@@ -43,9 +43,9 @@ Install using brew: https://www.mongodb.com/docs/manual/tutorial/install-mongodb
 # Setup the database
 To run MongoDB: `brew services start mongodb-community@8.0`
 To stop: `brew services stop mongodb-community@8.0`
-mongosh
-use testdb (Database name)
-show databases
-Create a Collection: 
-db.createCollection("sampleCollection")
-Now use the tableplus to connect with the mongodb
+`mongosh`
+`use testdb` (Database name)
+`show databases`
+## To Create a Collection: 
+`db.createCollection("sampleCollection")`
+## Now use the tableplus to connect with the mongodb
